@@ -32,11 +32,7 @@ async def on_ready():
 @bot.event
 async def on_message(message):
     if bot.user.mentioned_in(message):
-        auth = message.author.id
-        if auth == 224809612426215425:
-            await message.channel.send(f"<@!{auth}> gay")
-        else:
-            await message.channel.send(f"<@!{auth}> ку!")
+        await message.channel.send(f"<@!{auth}> ку!")
 
 async def morning():
     global msg_time, hr, mnt
